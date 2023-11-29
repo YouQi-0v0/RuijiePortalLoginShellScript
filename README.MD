@@ -1,16 +1,17 @@
 # 简介
 
+> 此项目是在 [SCU网络必坑指南](https://github.com/syaoranwe/RuijiePortalLoginShellScript) 和 [RuijiePortalLoginTool](https://github.com/callmeliwen/RuijiePortalLoginTool) 这两个已有的项目进行了一些微小的修改后得来的。
+
 本脚本实现了锐捷 ePortal Web 认证的登录，需要 curl 指令的支持，通过 curl 发送认证所需的 POST 数据包来实现 Web 认证。
 
 如果你所在的学校也是使用锐捷进行校园网认证，并且开启了 Web 的认证方式（如下图），那么应该是可以使用本脚本进行认证的。
 
-项目中的脚本文件以 **_jmu** 结尾命名的仅适用于集美大学，SCU版本的以 _scu 结尾。
+项目中的脚本文件以 **_jmu** 结尾命名的仅适用于集美大学，SCU版本的以 _scu 结尾, SHU版本的以 _shu 结尾。
 
-关于该脚本更加详细的使用说明请参考 [Wiki](https://github.com/LGiki/RuijiePortalLoginTool/wiki) 中的内容：
+关于该脚本更加详细的使用说明请参考 [SCU网络避坑指南](https://scunet.syaoran.top/8/%E8%BF%9E%E7%BD%91%E8%84%9A%E6%9C%AC.html) 中**连网脚本**的内容：
 
-- [利用 Cron 实现每天定时进行锐捷认证](https://github.com/LGiki/RuijiePortalLoginTool/wiki/%E5%88%A9%E7%94%A8-Cron-%E5%AE%9E%E7%8E%B0%E6%AF%8F%E5%A4%A9%E5%AE%9A%E6%97%B6%E8%BF%9B%E8%A1%8C%E9%94%90%E6%8D%B7%E8%AE%A4%E8%AF%81)
+- [利用 Cron 实现每天定时进行锐捷认证](https://scunet.syaoran.top/8/%E8%BF%9E%E7%BD%91%E8%84%9A%E6%9C%AC.html) 在第六项中提到crontab计划任务，你也可以自行查阅网上的内容进行配置。
 
-- [修改代码以适配异常情况](https://github.com/LGiki/RuijiePortalLoginTool/wiki/%E4%BF%AE%E6%94%B9%E4%BB%A3%E7%A0%81%E4%BB%A5%E9%80%82%E9%85%8D%E5%BC%82%E5%B8%B8%E6%83%85%E5%86%B5)
 
 **脚本依赖于 curl，所以使用之前请确保系统中已经安装了 curl。**
 
