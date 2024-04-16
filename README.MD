@@ -28,7 +28,7 @@
 # 基本用法
 
 ```shell
-./ruijie_general.sh username password
+./ruijie_general.sh <username> <password>
 ```
 
 - username 参数为认证用户名。
@@ -41,8 +41,4 @@
 
 如果你所在的学校需要在认证过程中输入验证码，则不适合使用这个 shell script 进行认证，需要使用 Python 等脚本语言实现验证码识别功能再进行认证。
 
-# 后记
 
-锐捷的 ePortal Web 认证上了之后，向 `InterFace.do?method=getOnlineUserInfo` 这个接口中 Post 提交 `userIndex` 参数会明文显示用户的密码，感觉一点安全性都没有。（集美大学在认证系统升级之后已修复该问题）
-
-未认证的情况下，53端口对DNS流量是可以正常通信的。如果你所在的学校也有类似的情况，也许可以尝试搭建个53端口的代理实现免认证上网。

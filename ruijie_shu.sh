@@ -2,8 +2,8 @@
 
 #If received parameters is less than 2, print usage
 if [ "${#}" -lt "2" ]; then
-  echo "Usage: ./ruijie_template.sh username password"
-  echo "Example: ./ruijie_template.sh 22129999 123456"
+  echo "\033[1;32mUsage: ./ruijie_template.sh <username> <password>\033[0m"
+  echo "  Example: ./ruijie_template.sh 22122739 Passw0rd"
   exit 1
 fi
 
